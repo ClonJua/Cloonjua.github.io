@@ -1,0 +1,69 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css">
+        <link rel= "stylesheet" href=".vscode/b">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:600,700" rel="stylesheet">
+		<title>proyecto basicas</title>
+	</head>
+	<body>
+
+		<div id="contenedor">
+            <img id="wpp-btn" src="https://es.logodownload.org/wp-content/uploads/2018/10/whatsapp-logo-11.png"
+           class="btn-wsp" target="_blank">
+             <img id="pp-btn" src="https://cdn-icons-png.flaticon.com/512/174/174861.png"
+           class="btn-pp" target="_blank">
+            
+            <script>
+                document.getElementById("wpp-btn").addEventListener("click", function(){
+                    window.open("https://api.whatsapp.com/send?phone=573184569467");
+
+                })
+                
+                 document.getElementById("pp-btn").addEventListener("click", function(){
+                    window.open("https://www.paypal.com/co/webapps/mpp/home?kid=p67128741798&gclid=Cj0KCQjw-daUBhCIARIsALbkjSbS-E7o4NHxV2f_OI4x_mL1tQdgQT3w80P6Mu5K_-cYTNYYA40mJjYaAsXHEALw_wcB&gclsrc=aw.ds");
+
+                })
+            </script>
+			<div id="calculadora">
+				<div id="resultado">
+					<div id="salida-texto">
+						<div id="historial">
+							<p id="historial-valor"></p>
+						</div>
+						<div id="salida">
+							<p id="salida-valor"></p>
+						</div>
+					</div>
+					<div id="salida-microfono">
+						<span id="microfono">
+						</span>
+
+					</div>
+				</div>
+				<div id="teclado">
+					<button class="operador" id="borrar">C</button>
+					<button class="operador" d="chao">&#187;</button>
+					<button class="operador" id="%">%</button>
+					<button class="operador" id="/">&#247;</button>
+					<button class="numero" id="7">7</button>
+					<button class="numero" id="8">8</button>
+					<button class="numero" id="9">9</button>
+					<button class="operador" id="*">&times;</button>
+					<button class="numero" id="4">4</button>
+					<button class="numero" id="5">5</button>
+					<button class="numero" id="6">6</button>
+					<button class="operador" id="-">-</button>
+					<button class="numero" id="1">1</button>
+					<button class="numero" id="2">2</button>
+					<button class="numero" id="3">3</button>
+					<button class="operador" id="+">+</button>
+					<button class="operador" id="empy"></button>
+					<button class="numero" id="0">0</button>
+					<button class="operador" id="empy"></button>
+					<button class="operador" id="=">=</button>
+				</div>
+			</div>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
